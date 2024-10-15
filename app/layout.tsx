@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 import "./globals.css";
+import {SearchLocationProvider} from "@/app/context/search-location";
+import {LoadingForecastProvider} from "@/app/context/loading-forecast";
+import {ErrorFetchingProvider} from "@/app/context/error-fetching";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +30,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+
+        <AntdRegistry>
+            <LoadingForecastProvider>
+                <SearchLocationProvider>
+                    <ErrorFetchingProvider>
+                        {children}
+                    </ErrorFetchingProvider>
+                </SearchLocationProvider>
+            </LoadingForecastProvider>
+        </AntdRegistry>
       </body>
     </html>
   );

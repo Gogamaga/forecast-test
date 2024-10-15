@@ -1,0 +1,19 @@
+.switchContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.widgetsContainer>div{
+    margin-bottom: 10px;
+}
+.nowContainer {
+    width: 200px;
+}
+
+.fewDaysContainer {
+    width: 400px;
+}
+.weekContainer {
+    width: 400px;
+}

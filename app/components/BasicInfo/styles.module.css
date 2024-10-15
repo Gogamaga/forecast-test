@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-geist-sans);
+    font-weight: bold;
+    text-align: center;
+}
+
+.icon {
+    object-fit: none;
+}

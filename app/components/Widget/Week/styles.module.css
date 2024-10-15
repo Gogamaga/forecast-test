@@ -1,0 +1,21 @@
+.container{
+    min-width: 400px;
+    aspect-ratio: 1 / 1;
+}
+
+.infoContainer{
+    width: 100%;
+}
+
+.basicInfoContainer{
+    margin-bottom: 10px;
+}
+
+.nextDayContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.location{
+    text-align: center;
+    color: #ed9b0a;
+}

@@ -1,0 +1,26 @@
+.container {
+
+}
+
+.icon{
+    width: 40px;
+}
+
+.text{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.astroContainer{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.maxTemp{
+    font-size: 12px;
+    font-weight: bold;
+}
+.minTemp{
+    font-size: 12px;
+    font-weight: bold;
+}
